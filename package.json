@@ -1,0 +1,79 @@
+{
+  "name": "truechain-blockchain",
+  "version": "1.0.0",
+  "description": "TrueChain Supply Chain Management Smart Contract",
+  "main": "index.js",
+  "scripts": {
+    "node": "npx hardhat node",
+    "compile": "npx hardhat compile",
+    "clean": "npx hardhat clean",
+    "test": "npx hardhat test",
+    "test:gas": "REPORT_GAS=true npx hardhat test",
+    "coverage": "npx hardhat coverage",
+    "deploy": "npx hardhat run scripts/deploy.js --network localhost",
+    "deploy:holesky": "npx hardhat run scripts/deploy.js --network holesky",
+    "deploy:sepolia": "npx hardhat run scripts/deploy.js --network sepolia",
+    "deploy:mainnet": "npx hardhat run scripts/deploy.js --network mainnet",
+    "verify:holesky": "npx hardhat verify --network holesky",
+    "verify:sepolia": "npx hardhat verify --network sepolia",
+    "verify:mainnet": "npx hardhat verify --network mainnet",
+    "generate-keys": "node scripts/generate-keys.js",
+    "check-balance": "node scripts/check-balance.js holesky",
+    "check-balance:localhost": "node scripts/check-balance.js localhost",
+    "check-balance:sepolia": "node scripts/check-balance.js sepolia",
+    "balance": "npx hardhat run scripts/check-balance-hardhat.js --network holesky",
+    "balance:localhost": "npx hardhat run scripts/check-balance-hardhat.js --network localhost",
+    "balance:sepolia": "npx hardhat run scripts/check-balance-hardhat.js --network sepolia",
+    "fund-accounts": "echo 'Visit https://holesky-faucet.pk910.de/ to fund your accounts'",
+    "flatten": "npx hardhat flatten",
+    "size": "npx hardhat size-contracts",
+    "console:localhost": "npx hardhat console --network localhost",
+    "console:holesky": "npx hardhat console --network holesky",
+    "lint": "solhint 'contracts/**/*.sol'",
+    "lint:fix": "solhint 'contracts/**/*.sol' --fix"
+  },
+  "keywords": [
+    "blockchain",
+    "ethereum",
+    "smart-contract",
+    "supply-chain",
+    "hardhat",
+    "truechain",
+    "defi",
+    "web3"
+  ],
+  "author": "TrueChain",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@nomicfoundation/hardhat-chai-matchers": "^2.0.0",
+    "@nomicfoundation/hardhat-ethers": "^3.0.0",
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.0",
+    "@nomicfoundation/hardhat-verify": "^1.0.0",
+    "@typechain/ethers-v6": "^0.4.0",
+    "@typechain/hardhat": "^8.0.0",
+    "chai": "^4.3.10",
+    "hardhat": "^2.19.4",
+    "hardhat-contract-sizer": "^2.10.0",
+    "hardhat-gas-reporter": "^1.0.9",
+    "solhint": "^4.1.1",
+    "solidity-coverage": "^0.8.5",
+    "typechain": "^8.3.2"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.1",
+    "dotenv": "^16.5.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/truechain-blockchain.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/truechain-blockchain/issues"
+  },
+  "homepage": "https://github.com/yourusername/truechain-blockchain#readme"
+}

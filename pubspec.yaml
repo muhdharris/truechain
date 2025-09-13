@@ -1,0 +1,39 @@
+name: truechain
+description: "Blockchain-powered supply chain management platform"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+  google_sign_in: ^6.1.1
+  shared_preferences: ^2.2.2  # Updated version
+  web3dart: ^2.7.3
+  http: ^1.1.0
+  flutter_dotenv: ^5.1.0
+  dio: ^5.3.2
+  fl_chart: ^0.66.0
+  # New dependencies for buyer verification:
+  qr_code_scanner: ^1.0.1
+  qr_flutter: ^4.1.0
+  permission_handler: ^11.0.1
+  
+  # Additional dependencies for real blockchain transactions:
+  convert: ^3.1.1           # For hex/byte conversions
+  crypto: ^3.0.3            # Cryptographic functions (if not already included by web3dart)
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - .env
+    - assets/abi/shipment_tracker.json
