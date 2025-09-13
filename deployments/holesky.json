@@ -1,0 +1,13 @@
+{
+  "network": "holesky",
+  "timestamp": "2025-06-18T12:00:39.410Z",
+  "deployer": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+  "deployerBalance": "28.413510000000015",
+  "contracts": [
+    {
+      "name": "TrueChain",
+      "address": "0x0c8A72d89AA40B71Ee5F430E89E1681f944DAAc0",
+      "transactionHash": "0xf7d9955df1030fdd97f9722958a9f2f6995a42d2ee461b6507165c095f9dfc54"
+    }
+  ]
+}
